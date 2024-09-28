@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philatelia - Profile</title>
+    <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Philatelia</h1>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="profile-header">
+            <div class="profile-pic-container">
+                <img src="hemanth.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div class="profile-details">
+                <h2 id="profile-name">John Doe</h2>
+                <p id="profile-email">johndoe@example.com</p>
+            </div>
+        </div>
+
+        <div class="profile-menu">
+            <ul>
+                <li><a href="#wallet" id="wallet-link">Wallet</a></li>
+                <li><a href="#products" id="products-link">Products</a></li>
+                <li><a href="#orders" id="orders-link">Your Orders</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-content">
+            <div id="wallet" class="content-section" style="display: none;">
+                <h3>Wallet</h3>
+                <p>Balance: <strong>$200</strong></p>
+                <button>Add Funds</button>
+            </div>
+
+            <div id="products" class="content-section" style="display: none;">
+                <h3>Products</h3>
+                <p>Explore our premium collection of stamps!</p>
+                <!-- Product cards can go here -->
+            </div>
+
+            <div id="orders" class="content-section" style="display: none;">
+                <h3>Your Orders</h3>
+                <p>Order #1234: 5 Vintage Stamps - <strong>Shipped</strong></p>
+                <p>Order #1235: 3 Rare Stamps - <strong>Processing</strong></p>
+                <!-- Add more order summaries -->
+            </div>
+        </div>
+    </section>
+
+    <script src="wallet.js"></script>
+</body>
+</html>
