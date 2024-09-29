@@ -1881,7 +1881,7 @@
     }
 
 
-  
+
 
     .py-3 {
       padding-top: 0.75rem;
@@ -2030,38 +2030,68 @@
       animation: view 1s ease-in-out 1;
     }
 
-    .display3{
+    .display3 {
       animation: view1 2s ease-in-out 1;
     }
 
-    .display4{
+    .display4 {
       animation: left_view 1s ease-in 1;
     }
-    @keyframes left_view{
-      0%{
+
+    .one_by_one {
+      animation: one_view 2s ease-in 1;
+    }
+
+    @keyframes one_view {
+      0% {
+        opacity: 0;
+      }
+      30%{
+        opacity:0.3
+      }
+      50% {
+        opacity: 0.5;
+      }
+      70%{
+        opacity:0.7;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes left_view {
+      0% {
         transform: translateX(40%);
       }
-      100%{
+
+      100% {
         transform: translateX(0%);
       }
     }
-    @keyframes view1{
-      0%{
-        opacity:0.1;
+
+    @keyframes view1 {
+      0% {
+        opacity: 0.1;
       }
-      30%{
-        opacity:0.5;
+
+      30% {
+        opacity: 0.5;
       }
-      50%{
-        opacity:0.7;
+
+      50% {
+        opacity: 0.7;
       }
-      70%{
-        opacity:0.9
+
+      70% {
+        opacity: 0.9
       }
-      100%{
-        opacity:1;
+
+      100% {
+        opacity: 1;
       }
     }
+
     @keyframes view {
       0% {
         opacity: 0.3;
@@ -2264,7 +2294,7 @@
       transition-duration: 150ms
     }
 
-    # .hover\:duration-300:hover {
+    .hover\:duration-300:hover {
       transition-duration: 300ms
     }
 
@@ -2535,8 +2565,8 @@
       }
 
 
-      .l1:hover+ label{
-        background:none !important ;
+      .l1:hover+label {
+        background: none !important;
       }
 
       .sm\:text-base {
@@ -2931,7 +2961,7 @@
               class="pr-12 py-3 text-black whitespace-nowrap cursor-pointer hover:text-black/60 hover:transition-all duration-100 dark:text-white dark:hover:text-white/60">
               <div class="_editable_jwu41_1 undefined" data-link="link=contact&amp;target=_blank&amp;text=Contact"><a
                   href="wallet.html">
-                  Myorder    </a></div>
+                  Myorder </a></div>
             </button>
           </nav>
         </div>
@@ -3610,10 +3640,10 @@
         </div>
       </div>
     </section>
-    <section class="py-10 bg-white dark:bg-slate-800 sm:py-16 lg:py-24">
+    <section class="py-10 bg-white dark:bg-slate-800 sm:py-16 lg:py-24 show1_parent">
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="flex flex-wrap justify-center text-center">
-          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+        <div class="flex flex-wrap justify-center text-center ">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 show1">
             <div style="opacity: 1; transform: none;">
               <div
                 class="relative w-14 h-14 inline-flex items-center justify-center mx-auto rounded-full bg-blue-100 dark:bg-blue-100">
@@ -3637,7 +3667,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 show1">
             <div style="opacity: 1; transform: none;">
               <div
                 class="relative w-14 h-14 inline-flex items-center justify-center mx-auto rounded-full bg-orange-100 dark:bg-orange-100">
@@ -3662,7 +3692,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 show1">
             <div style="opacity: 1; transform: none;">
               <div
                 class="relative w-14 h-14 inline-flex items-center justify-center mx-auto rounded-full bg-green-100 dark:bg-green-100">
@@ -3687,7 +3717,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 show1">
             <div style="opacity: 1; transform: none;">
               <div
                 class="relative w-14 h-14 inline-flex items-center justify-center mx-auto rounded-full bg-purple-100 dark:bg-purple-100">
@@ -3712,7 +3742,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 show1">
             <div style="opacity: 1; transform: none;">
               <div
                 class="relative w-14 h-14 inline-flex items-center justify-center mx-auto rounded-full bg-cyan-100 dark:bg-cyan-100">
@@ -3737,7 +3767,7 @@
               </p>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 show1">
             <div style="opacity: 1; transform: none;">
               <div
                 class="relative w-14 h-14 inline-flex items-center justify-center mx-auto rounded-full bg-yellow-100 dark:bg-yellow-100">
@@ -4336,9 +4366,11 @@
       let t = document.querySelector(".explore");
       let t1 = document.querySelector(".mim1");
       let latest_element = document.querySelector(".latest_stamp");
-      let discover_element=document.querySelector(".discover");
-      let contact=document.querySelector(".contact1");
-      let contact2=document.querySelector(".contact2");
+      let discover_element = document.querySelector(".discover");
+      let contact = document.querySelector(".contact1");
+      let contact2 = document.querySelector(".contact2");
+      let show_parent = document.querySelector(".show1_parent");
+      let show = document.querySelectorAll(".show1");
       console.log(t);
       if (check(t)) {
         console.log("RADHAKRISHNALOVE");
@@ -4362,30 +4394,46 @@
       else {
         latest_element.classList.remove("display2");
       }
-      if(check(discover_element)){
+      if (check(discover_element)) {
         console.log("RADHAKRISHNALOVEUUUU");
         discover_element.classList.add("display3");
       }
-      else{
+      else {
         discover_element.classList.remove("display3");
       }
-      if(check(contact)){
+      if (check(contact)) {
         console.log("RADHAKRISHNAlove");
         contact.classList.add("display4");
       }
-      else{
+      else {
         contact.classList.remove("display4");
       }
-      if(check(contact2)){
+      if (check(contact2)) {
         console.log("RADHAKRISHNALOVEUUUUU");
         contact2.classList.add("display4");
       }
-      else{
-      contact2.classList.remove("display4");
+      else {
+        contact2.classList.remove("display4");
       }
+      // show.forEach((element)=>{
+      //     console.log(element);
+      //   });
+      if (check(show_parent)) {
+        console.log("RADHAKRISHNALOVEUUUUUUINFINITY");
+        show.forEach((element, index) => {
+          // console.log(element);
+          element.classList.add("one_by_one");
+          // setTimeout(() => {
+          //   element.classList.remove("one_by_one");
+          // }
+          //   , 2000);
+        });
+
+      }
+
     }
 
-
+    let show = document.querySelectorAll(".show1");
     window.addEventListener('scroll', visible);
   </script>
 </body>
