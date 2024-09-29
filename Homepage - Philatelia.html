@@ -1880,6 +1880,9 @@
       padding-bottom: 6rem
     }
 
+
+  
+
     .py-3 {
       padding-top: 0.75rem;
       padding-bottom: 0.75rem
@@ -2028,14 +2031,32 @@
     }
 
     .display3{
-      animation: view1 1s ease-in-out 1;
+      animation: view1 2s ease-in-out 1;
+    }
+
+    .display4{
+      animation: left_view 1s ease-in 1;
+    }
+    @keyframes left_view{
+      0%{
+        transform: translateX(40%);
+      }
+      100%{
+        transform: translateX(0%);
+      }
     }
     @keyframes view1{
       0%{
-        opacity:0.3;
+        opacity:0.1;
+      }
+      30%{
+        opacity:0.5;
       }
       50%{
         opacity:0.7;
+      }
+      70%{
+        opacity:0.9
       }
       100%{
         opacity:1;
@@ -2903,9 +2924,16 @@
             </button><button
               class="pr-12 py-3 text-black whitespace-nowrap cursor-pointer hover:text-black/60 hover:transition-all duration-100 dark:text-white dark:hover:text-white/60">
               <div class="_editable_jwu41_1 undefined" data-link="link=contact&amp;target=_blank&amp;text=Contact"><a
-                  href="wallet.html">
+                  href="profile.html">
                   Contact</a></div>
-            </button></nav>
+            </button>
+            <button
+              class="pr-12 py-3 text-black whitespace-nowrap cursor-pointer hover:text-black/60 hover:transition-all duration-100 dark:text-white dark:hover:text-white/60">
+              <div class="_editable_jwu41_1 undefined" data-link="link=contact&amp;target=_blank&amp;text=Contact"><a
+                  href="wallet.html">
+                  Myorder    </a></div>
+            </button>
+          </nav>
         </div>
         <div class=" w-full h-full flex items-center justify-end overflow-hidden gap-3"><button
             class="BTN-SECONDARY w-fit px-5 group text-[14px] whitespace-nowrap font-normal text-black flex gap-2 items-center rounded-full hover:bg-black/5 hover:transition-all hover:duration-300"
@@ -3753,7 +3781,7 @@
                   Have questions or need support? Reach out to us!</div>
                 </p>
               </div>
-              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8 contact1">
                 <div class="rounded-2xl bg-slate-50 p-10 dark:bg-slate-600">
                   <h3 class="TITLE-SECONDARY text-base font-semibold leading-7 text-slate-900 dark:text-slate-200">
                     <div class="_editable_jwu41_1 undefined" data-link="link=&amp;target=_blank&amp;text=Support">
@@ -3819,7 +3847,7 @@
                   in major cities across India.</div>
                 </p>
               </div>
-              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8 contact2">
                 <div class="rounded-2xl bg-slate-50 p-10 dark:bg-slate-600">
                   <h3 class="TITLE-SECONDARY text-base font-semibold leading-7 text-slate-900 dark:text-slate-200">
                     <div class="_editable_jwu41_1 undefined" data-link="link=&amp;target=_blank&amp;text=Mumbai">Mumbai
@@ -4309,6 +4337,8 @@
       let t1 = document.querySelector(".mim1");
       let latest_element = document.querySelector(".latest_stamp");
       let discover_element=document.querySelector(".discover");
+      let contact=document.querySelector(".contact1");
+      let contact2=document.querySelector(".contact2");
       console.log(t);
       if (check(t)) {
         console.log("RADHAKRISHNALOVE");
@@ -4339,7 +4369,20 @@
       else{
         discover_element.classList.remove("display3");
       }
-
+      if(check(contact)){
+        console.log("RADHAKRISHNAlove");
+        contact.classList.add("display4");
+      }
+      else{
+        contact.classList.remove("display4");
+      }
+      if(check(contact2)){
+        console.log("RADHAKRISHNALOVEUUUUU");
+        contact2.classList.add("display4");
+      }
+      else{
+      contact2.classList.remove("display4");
+      }
     }
 
 
